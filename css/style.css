@@ -1,0 +1,141 @@
+
+html, body{
+		margin:0;
+		padding: 0;
+		border:0;
+		outline:0;
+		vertical-align:baseline;
+		scroll-behavior: smooth;
+}
+
+body{
+  color: white;
+	text-decoration: none;
+}
+
+html>body>.page a:link {color: white;text-decoration: none;}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-header{
+	z-index: 3;
+	background-image: linear-gradient(to right top, rgba(8,28,58,0.65),
+	 rgba(17,39,73,0.65), rgba(26,50,88,0.65), rgba(35, 63, 104, 0.65),
+	 rgba(44, 75, 120, 0.65));
+}
+.site-header .sidenav{
+	background-image: linear-gradient(to right top, rgba(6,26,56,0.85),
+	 rgba(15,37,71,0.75), rgba(24,48,86,0.85), rgba(33, 61, 102, 0.85),
+	 rgba(42, 73, 118, 0.85));
+	 color: white!important;
+	 z-index: 4;
+}
+.site-header .sidenav a{
+	color: white!important;
+}
+.sidenav-overlay{
+	z-index: 2!important;
+	background-color: rgba(255, 255, 250, 0.2)!important;
+}
+.site-content {
+	flex: 1;
+	z-index: 1;
+}
+.site-footer{
+	margin: 5px;
+	border-style: outset;
+	border-color: rgba(112,146,190,0.6);
+	border-radius: 6px;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	background: rgba(230, 230, 230, 0.2);
+	font-size: 15px;
+}
+
+footer>a{
+	color: white;
+	margin-top: 0px;
+  margin-left: 15px;
+}
+
+canvas{
+	top: 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 900px;
+}
+.connection{
+	width: 76px!important;
+	height: 50px;
+}
+.projets{
+	width: 66px;
+	height: 50px;
+}
+.competences{
+	width: 91px;
+	height: 50px;
+}
+.contact{
+	width: 66px;
+	height: 50px;
+}
+.about-me{
+	margin-right: 25px;
+	width: 82px;
+	height: 50px;
+}
+.flip-card-inner {
+	position: relative;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card:hover .flip-card-front {
+  opacity: 0;
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-card-front {
+  z-index: 1;
+}
+.flip-card-front i{
+	margin-top: 5px;
+	margin-left: 27px;
+}
+.competences i{
+	margin-left: 38px;
+}
+.projets i, .contact i{
+	margin-left: 27px;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 2;
+}
+.flip-card a{
+	padding:0px;
+}

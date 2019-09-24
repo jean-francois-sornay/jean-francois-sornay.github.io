@@ -1,0 +1,112 @@
+body{
+  background-color: rgba(0,0,0,0.92);
+}
+
+.header{
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header2{
+  position: relative;
+	margin: 0 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0,5);
+}
+
+svg{
+  display: block;
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+
+#coder{
+  animation-delay: 1.7s!important;
+  animation: dash 4s linear forwards;
+  stroke-dasharray: 5000;
+  stroke-dashoffset: 5000;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+#colors{
+  opacity: 0;
+  animation: colorIn 3.5s 5.5s ease-out forwards;
+}
+
+@keyframes colorIn {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+
+@media only screen and (max-width: 600px) {
+    svg {
+        width: 100%;
+    }
+}
+
+.header3{
+  z-index: 1;
+  position: absolute;
+	margin: 0 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2)!important;
+}
+
+.overlay-forms {
+  background-image: linear-gradient(to right top, rgba(8,28,58,0.85),
+   rgba(17,39,73,0.85), rgba(26,50,88,0.85), rgba(35, 63, 104, 0.85),
+   rgba(44, 75, 120, 0.85));
+}
+
+.bg-forms {
+  background-color: rgba(255, 255, 255, 0.10)!important;
+}
+
+.profile-title {
+ 	display: inline-block;
+ 	width: 150px;
+ 	margin-bottom: 8px;
+}
+
+.profile-desc {
+ 	display: inline-block;
+ 	color: #848484!important;
+ 	margin-bottom: 8px;
+}
+
+.info ul {
+  display: inline-block;
+  text-align: left;
+}
+
+.info p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px !important;
+}
+
+.pagination a{
+  background-color: rgba(255,255,255,0.16)!important;
+}
+
+.card-image img{
+  max-height:100%!important;
+}
+
+
+
+.passions .card img{
+  max-height: 250px!important;
+}

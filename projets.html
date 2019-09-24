@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>J-François Sornay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/preLoader.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/projets.css">
+  <link rel="stylesheet" type="text/css" href="./css/competence.css">
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="./js/initscript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+  <style>@media print {#ghostery-purple-box {display:none !important}}</style>
+</head>
+
+<body data-spy="scroll" data-target=".nav-wrapper" style>
+
+  <div class="page">
+
+    <div class="preloader-background">
+      <div class="vertical-centered-box">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+        <div class="content">
+          <div class="loader-circle"></div>
+          <div class="loader-line-mask">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav-wraper transparent" data-spy="affix" data-offset-bottom="0">
+        <div class="container">
+          <a href="./index.html" class="brand-logo hide-on-med-and-down">Jean-François Sornay</a>
+          <a href="./index.html" class="brand-logo hide-on-large-only">JF Sornay</a>
+        </div>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <div class="flip-card connection">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="material-icons">vpn_key</i>
+                </div>
+                <div class="flip-card-back">
+                  <a href="./connection.html">Connection</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flip-card competences">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="material-icons">developer_mode</i>
+                </div>
+                <div class="flip-card-back">
+                  <a class="" href="./projets.html">Compétences</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flip-card contact">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="material-icons">contacts</i>
+                </div>
+                <div class="flip-card-back">
+                  <a class="" href="./contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="flip-card about-me">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <i class="material-icons">person</i>
+                </div>
+                <div class="flip-card-back">
+                  <a class="" href="./QuiSuisJe.html">Qui suis-je ?</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="sidenav white" id="mobile-demo" style="transform: translateX(-105%);z-index:3;color:black!important;">
+        <li><a class=" lienmenu" href="./connection.html">Connection</a></li>
+        <li><a class=" lienmenu" href="./projets.html">Compétences</a></li>
+        <li><a class=" lienmenu" href="./contact.html">Contact</a></li>
+        <li><a class=" lienmenu" href="./QuiSuisJe.html">Qui suis-je ?</a></li>
+      </ul>
+    </header>
+
+    <div id="containered" class="containered intro-effect-push">
+      <div class="header">
+        <div class="header2"></div>
+        <div class="title">
+          <h1>Mes compétences et projets</h1>
+        </div>
+      </div>
+      <button class="trigger" data-info="Cliquer pour voir mes projets"><span>Trigger</span></button>
+
+      <div class="content .site-content">
+        <div>
+          <p>Dans cette page, je présente mes compétences et mes projets. Tout mes projets ne sont pas présentés ou ne sont pas complétement renseigné.
+            Si vous voulez de plus amples informations, je vous invite à me contacter <a style="color:#7CBFFF;" href="./contact.html">ici</a>.
+          </p>
+        </div>
+        <div>
+          <h2 class="category-name center grey darken-4">Mes compétences</h2>
+        </div>
+        <div class="row transparent">
+          <div class="col s12">
+            <ul class="tabs  transparent">
+              <li class="tab col s3"><a class="active" href="#test1">Langages</a></li>
+              <li class="tab col s3"><a href="#test3">Systemes</a></li>
+              <li class="tab col s3"><a href="#test2">Outils</a></li>
+              <li class="tab col s3"><a href="#test4">Professionnelles</a></li>
+            </ul>
+          </div>
+          <div id="test1" class="col s12 indigo darken-2">
+            <div class="centered">
+              <h1>Langages informatiques</h1>
+              <div class="skill-container">
+                <p>java</p>
+                <p>83%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>sql</p>
+                <p>78%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf-"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>html</p>
+                <p>75%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>css</p>
+                <p>75%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>C</p>
+                <p>60%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>pl/sql</p>
+                <p>50%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good-"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>javascript</p>
+                <p>50%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good-"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>C#</p>
+                <p>34%</p>
+                <div class="skill-bar">
+                  <div class="skill-level moyen"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>python</p>
+                <p>34%</p>
+                <div class="skill-bar">
+                  <div class="skill-level moyen"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>php</p>
+                <p>26%</p>
+                <div class="skill-bar">
+                  <div class="skill-level starting-plus-plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test2" class="col s12   cyan darken-3">
+            <div class="centered">
+              <h1>Outils informatiques</h1>
+              <div class="skill-container">
+                <p>Git</p>
+                <p>75%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>IntelliJ IDEA</p>
+                <p>75%</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Joomla</p>
+                <p>65%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good-plus"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Oracle</p>
+                <p>60%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Atom</p>
+                <p>46%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Visual studio</p>
+                <p>34%</p>
+                <div class="skill-bar">
+                  <div class="skill-level moyen"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test3" class="col s12 blue darken-2">
+            <div class="centered">
+              <h1>Systèmes</h1>
+              <div class="skill-container">
+                <p>Windows</p>
+                <p>60%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Linux</p>
+                <p>46%</p>
+                <div class="skill-bar">
+                  <div class="skill-level good--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Android</p>
+                <p>40%</p>
+                <div class="skill-bar">
+                  <div class="skill-level moyen-plus"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Mac OS</p>
+                <p>26%</p>
+                <div class="skill-bar">
+                  <div class="skill-level starting-plus-plus"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>IOS</p>
+                <p>20%</p>
+                <div class="skill-bar">
+                  <div class="skill-level starting-plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="test4" class="col s12 teal darken-3">
+            <div class="centered">
+              <h1>Linguistique et <br>Professionnelles</h1>
+              <div class="skill-container">
+                <p>communication</p>
+                <div class="skill-bar">
+                  <div class="skill-level pro"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>ethique</p>
+                <div class="skill-bar">
+                  <div class="skill-level pro"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>travail en groupe</p>
+                <div class="skill-bar">
+                  <div class="skill-level pro"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>français</p>
+                <p>Courant (C2)</p>
+                <div class="skill-bar">
+                  <div class="skill-level pro"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>anglais</p>
+                <p>Intermédiaire (B1+)</p>
+                <div class="skill-bar">
+                  <div class="skill-level perf--"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>espagnole</p>
+                <p>Intermédiaire (B1-)</p>
+                <div class="skill-bar">
+                  <div class="skill-level good"></div>
+                </div>
+              </div>
+              <div class="skill-container">
+                <p>Japonais</p>
+                <p>Débutant (A0)</p>
+                <div class="skill-bar">
+                  <div class="skill-level starting"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="category-name center grey darken-4">Mes Projets</h2>
+        </div>
+        <div class="carousel">
+          <a class="btn modal-trigger carousel-item " href="#modal1">R1_TS<img src="./image/R1_TS.png" alt="image de présentation du projet">2018<span>Clique pour voir plus</span></a>
+          <a class="btn modal-trigger carousel-item " href="#modal2">Bug Hunter<img src="./image/BugHunter.png" alt="image de présentation du projet">2018<span>Clique pour voir plus</span></a>
+          <a class="btn modal-trigger carousel-item " href="#modal3">Dominion<img src="./image/Dominion.png" alt="image de présentation du projet">2019<span>Clique pour voir plus</span></a>
+          <a class="btn modal-trigger carousel-item " href="#modal4">Pardelle<img src="./image/Pardelle.png" alt="image de présentation du projet">2019<span>Clique pour voir plus</span></a>
+        </div>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h1 class="center-align">R1 Tactical Siege</h1>
+            <p class="subline">Developper full-stack</p>
+            <p>Réalisé en <strong>2018</strong></p>
+            <p>Dans le cadre du projet de Terminal S option ISN</p>
+            <p>Il s'agit du projet réalisé avec mon groupe en Terminal S pour l'option Informatique et Science du Numérique.<br><br>
+              Nous avions réalisé un projet de jeu vidéo 2D vue du dessus en C# avec le framework Monogame. Le jeu possède deux modes.<br>
+              Dans le premier mode, le joueur devait rechercher et éliminer les IA adverses.<br>
+              Dans le second mode, pour que le joueur réussisse le niveau, il faut qu'il récupère l'otage le défende et le ramène dans une zone dite 'safe'.<br>
+              Les IA sont capables de rechercher le joueur aux alentours de la dernière position du joueur que l'IA a pu voir.<br><br>
+              Dans ce projet, j'ai réalisé la base du jeu (c'est-à-dire l'interface du jeu) mais également le gamplay du joueur et j'ai participé au développement de l'IA.<br>
+              Cela m'a apporté une première expérience en programmation orientée objet tout en découvrant le langage C# et la réalisation en groupe de projet informatique.
+            </p>
+            <p class=" row center-align"><img class="col s12 m6 responsive-img" src="./image/R1_TS.png" alt="image de présentation du projet">
+              <img class="col s12 m6 responsive-img" src="./image/R1_TS1.png" alt="image de présentation du projet">
+            </p>
+            <p class="center-align "><a class="" href="#">Lien du projet non disponible</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat white-text">Retour</a>
+          </div>
+        </div>
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <h1 class="center-align">Bug Hunter</h1>
+            <p class="subline">Developper front-end</p>
+            <p>Réalisé en <strong>2018</strong></p>
+            <p>Dans le cadre du projet du 1er semestre en 1er année d'IUT</p>
+            <p>Il s'agit du premier projet de création d'un site internet que j'ai réalisé lors du 1er semestre en 1er année d'IUT.<br>
+              Le but de ce projet était d'apprendre les bases de l'HTML et du CSS et de les mettre en oeuvres. <br><br>
+              Il s'agissait d'un rojet en groupe dans lequel j'ai réalisé de la création et de la mise en place de la base des pages. C'est-à-dire, le menu, le header et le footer mais également de la page d'acceuil.<br>
+              Cela m'a permis d'apprendre et consolider mes bases en HTML, CSS et au principe de responsivité. 
+            </p>
+            <p class="center-align"><img class="responsive-img" src="./image/BugHunter.png" alt="image de présentation du projet">
+              <img class="responsive-img" src="./image/BugHunter.png" alt="image de présentation du projet">
+            </p>
+            <p class="center-align"><a href="http://webinfo.iutmontp.univ-montp2.fr/~lavederm/projetHTML/Produit.html">Lien du projet</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat white-text">Retour</a>
+          </div>
+        </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <h1 class="center-align">Dominion</h1>
+            <p class="subline">Developper back-end</p>
+            <p>Réalisé en <strong>Avril-Mai 2019</strong></p>
+            <p>Dans le cadre du projet de programmation du 2eme semestre d'IUT</p>
+            <p>Le projet Dominion se base sur le jeu de carte Dominion. Il s'agit d'un jeu tour par tour ayant 3 phases par tour : phase d'action, de trésor et d'achat.<br><br>
+              Pendant la phase Action, nous pouvons utiliser des cartes de Type Action qui nous permette, selon leur effet, de pouvoir par exemple de piocher des cartes, de gagner de l'argent pour ce tour...<br><br>
+              Pendant la phase de Trésor, nous pouvons utiliser des cartes de type Trésor pour augmenter l'argent du joueur pour ce tour.<br><br>
+              Pendant la phase Achat, le joueur peut acheter des cartes.<br><br>
+              Dans ce projet, je me suis occupé de l'implémentation du joueur et de la majorité des cartes ainsi que la supervisation et correction du projet.<br>
+              Cela m'a aidé à consolider mon niveau en JAVA et d'apprendre à mettre en place un projet de programmation JAVA complet et utilisable.
+            </p>
+            <p class="center-align"><img class="responsive-img" src="./image/Dominion.png" alt="image de présentation du projet">
+              <img class="responsive-img" src="./image/Dominion1.png" alt="image de présentation du projet">
+            </p>
+            <p class="center-align"><a href="#">Lien du projet non disponible</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat white-text">Retour</a>
+          </div>
+        </div>
+        <div id="modal4" class="modal">
+          <div class="modal-content">
+            <h1 class="center-align">Pardelle</h1>
+            <p class="subline">Developper front-end</p>
+            <p>Réalisé le <strong>Avril-Juin 2019</strong></p>
+            <p>Dans le cadre du projet du 2eme semestre d'IUT</p>
+            <p>Dans ce projet, le but était de créer un site internet répondant aux demandes d'un client en utilisant une gestion de groupe avec la méthode agile Scrum. La demande du client portait sur la création d'une plateforme d'organisation d'Esport en utilisant uniquement un CMS.<br><br>
+              Dans ce projet, je me suis occupé de la mise en place du menu, du footer et de la réalisation de la page 'À propos'.<br><br>
+              Cela m'a appris à utiliser un CMS et à gérer un projet à travers une méthode agile.
+            </p>
+            <p class="center-align"><img class="responsive-img" src="./image/Pardelle.png" alt="image de présentation du projet">
+              <img class="responsive-img" src="./image/Pardelle1.png" alt="image de présentation du projet">
+            </p>
+            <p class="center-align"><a href="http://webinfo.iutmontp.univ-montp2.fr/~perellep/joomla/index.php/fr/">Lien du projet</a></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-blue btn-flat white-text">Retour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      Copyright ©2019
+      Jean-François Sornay
+    </p>
+    <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-sornay-82757716b/" class="pure-button button-socicon">
+      <span class="socicon-linkedin"></span>
+    </a>
+    <a href="https://github.com/jean-francois-sornay" class="pure-button button-socicon">
+      <span class="socicon-github"></span>
+    </a>
+    <a href="https://www.facebook.com/jf.sornay" class="pure-button button-socicon">
+      <span class="socicon-facebook"></span>
+    </a>
+  </footer>
+
+  <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+  <div class="drag-target"></div>
+
+  <script type="text/javascript">(function() {
+
+    // detect if IE : from http://stackoverflow.com/a/16657946
+    var ie = (function(){
+      var undef,rv = -1; // Return value assumes failure.
+      var ua = window.navigator.userAgent;
+      var msie = ua.indexOf('MSIE ');
+      var trident = ua.indexOf('Trident/');
+
+      if (msie > 0) {
+        // IE 10 or older => return version number
+        rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+      } else if (trident > 0) {
+        // IE 11 (or newer) => return version number
+        var rvNum = ua.indexOf('rv:');
+        rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+      }
+
+      return ((rv > -1) ? rv : undef);
+    }());
+
+
+    // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179
+    // left: 37, up: 38, right: 39, down: 40,
+    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+    var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+    function preventDefault(e) {
+      e = e || window.event;
+      if (e.preventDefault)
+      e.preventDefault();
+      e.returnValue = false;
+    }
+
+    function keydown(e) {
+      for (var i = keys.length; i--;) {
+        if (e.keyCode === keys[i]) {
+          preventDefault(e);
+          return;
+        }
+      }
+    }
+
+    function touchmove(e) {
+      preventDefault(e);
+    }
+
+    function wheel(e) {
+      // for IE
+      //if( ie ) {
+      //preventDefault(e);
+      //}
+    }
+
+    function disable_scroll() {
+      window.onmousewheel = document.onmousewheel = wheel;
+      document.onkeydown = keydown;
+      document.body.ontouchmove = touchmove;
+    }
+
+    function enable_scroll() {
+      window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
+    }
+
+    var docElem = window.document.documentElement,
+    scrollVal,
+    isRevealed,
+    noscroll,
+    isAnimating,
+    container = document.getElementById( 'containered' ),
+    trigger = container.querySelector( 'button.trigger' );
+
+    function scrollY() {
+      return window.pageYOffset || docElem.scrollTop;
+    }
+
+    function scrollPage() {
+      scrollVal = scrollY();
+
+      if( noscroll && !ie ) {
+        if( scrollVal < 0 ) return false;
+        // keep it that way
+        window.scrollTo( 0, 0 );
+      }
+
+      if( classie.has( container, 'notrans' ) ) {
+        classie.remove( container, 'notrans' );
+        return false;
+      }
+
+      if( isAnimating ) {
+        return false;
+      }
+
+      if( scrollVal <= 0 && isRevealed ) {
+        toggle(0);
+      }
+      else if( scrollVal > 0 && !isRevealed ){
+        toggle(1);
+      }
+    }
+
+    function toggle( reveal ) {
+      isAnimating = true;
+
+      if( reveal ) {
+        classie.add( container, 'modify' );
+      }
+      else {
+        noscroll = true;
+        disable_scroll();
+        classie.remove( container, 'modify' );
+      }
+
+      // simulating the end of the transition:
+      setTimeout( function() {
+        isRevealed = !isRevealed;
+        isAnimating = false;
+        if( reveal ) {
+          noscroll = false;
+          enable_scroll();
+        }
+      }, 1200 );
+    }
+
+    // refreshing the page...
+    var pageScroll = scrollY();
+    noscroll = pageScroll === 0;
+
+    disable_scroll();
+
+    if( pageScroll ) {
+      isRevealed = true;
+      classie.add( container, 'notrans' );
+      classie.add( container, 'modify' );
+    }
+
+    window.addEventListener( 'scroll', scrollPage );
+    trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  })();
+  </script>
+</body>
+</html>
